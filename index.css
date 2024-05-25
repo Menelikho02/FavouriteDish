@@ -1,0 +1,130 @@
+/* Styles for Side Navigation */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    padding-top: 0;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidenav ul li a:hover {
+    background-color: #ddd;
+}
+
+/*Styles for Content Area */
+.container {
+    margin-left: 200px; /* Same as sidenav width */
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width :600px) {
+    .container {
+        margin-left: 0;
+    }
+    .sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+}
+
+/* Styles for Home Section */
+#home img {
+    max-width: 100%;
+    height:auto ;
+}
+
+/* Styles for Ingrediants Section */
+#ingrediants {
+    text-align: center;
+    padding: 20px;
+
+}
+
+#ingrediants ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+}
+
+#ingredients li {
+    margin: 10px;
+    text-align: center;
+    list-style: none;
+}
+
+#ingrediants img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for Recipe Section */
+#recipe {
+    text-align: center;
+    padding: 20px;
+}
+
+#recipe ol{
+    text-align: left;
+    padding-left: 20px ;
+}
+
+#recipe ol li {
+    margin-bottom: 10px;
+}
+
+#recipe ol li img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for Feedback Section*/
+#feedback{
+    text-align: center;
+    padding: 20px;
+}
+
+#feedback form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedback label{
+    margin-bottom: 10px;
+}
+
+#feedback textarea{
+    width: 100%;
+    max-width: 400%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#feedback input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#feedback input[type="submit"]:hover{
+    background-color: #45a049;
+}
+
